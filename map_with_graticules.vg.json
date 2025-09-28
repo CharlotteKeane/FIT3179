@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 450,
+  "title": "Australia Participants by State and Age",
+  "projection": {"type": "mercator"},
+  "layer": [
+    {
+      "data": {
+        "url": "Australia.topojson.json",
+        "format": {"type": "topojson", "feature": "austates"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+    },
+    {
+      "data": {
+        "values": [
+          {"Age":"15-17","Gender":"Male","State":"NSW","Value":103.6,"Lat":-33.8688,"Lon":151.2093},
+          {"Age":"15-17","Gender":"Male","State":"Vic","Value":74.5,"Lat":-37.8136,"Lon":144.9631},
+          {"Age":"15-17","Gender":"Male","State":"Qld","Value":54.2,"Lat":-27.4698,"Lon":153.0251},
+          {"Age":"15-17","Gender":"Male","State":"SA","Value":17.9,"Lat":-34.9285,"Lon":138.6007},
+          {"Age":"15-17","Gender":"Male","State":"WA","Value":43.3,"Lat":-31.9505,"Lon":115.8605},
+          {"Age":"15-17","Gender":"Male","State":"Tas","Value":7.6,"Lat":-42.8821,"Lon":147.3272},
+          {"Age":"15-17","Gender":"Male","State":"NT","Value":3.1,"Lat":-12.4634,"Lon":130.8456},
+          {"Age":"15-17","Gender":"Male","State":"ACT","Value":3.4,"Lat":-35.2809,"Lon":149.13},
+          
+          {"Age":"18-24","Gender":"Male","State":"NSW","Value":270.3,"Lat":-33.8688,"Lon":151.2093},
+          {"Age":"18-24","Gender":"Male","State":"Vic","Value":202.3,"Lat":-37.8136,"Lon":144.9631},
+          {"Age":"18-24","Gender":"Male","State":"Qld","Value":127.2,"Lat":-27.4698,"Lon":153.0251},
+          {"Age":"18-24","Gender":"Male","State":"SA","Value":54.9,"Lat":-34.9285,"Lon":138.6007},
+          {"Age":"18-24","Gender":"Male","State":"WA","Value":80.9,"Lat":-31.9505,"Lon":115.8605},
+          {"Age":"18-24","Gender":"Male","State":"Tas","Value":16.5,"Lat":-42.8821,"Lon":147.3272},
+          {"Age":"18-24","Gender":"Male","State":"NT","Value":7.2,"Lat":-12.4634,"Lon":130.8456},
+          {"Age":"18-24","Gender":"Male","State":"ACT","Value":15.2,"Lat":-35.2809,"Lon":149.13},
+          
+          {"Age":"25-34","Gender":"Male","State":"NSW","Value":362,"Lat":-33.8688,"Lon":151.2093},
+          {"Age":"25-34","Gender":"Male","State":"Vic","Value":267.9,"Lat":-37.8136,"Lon":144.9631},
+          {"Age":"25-34","Gender":"Male","State":"Qld","Value":191.6,"Lat":-27.4698,"Lon":153.0251},
+          {"Age":"25-34","Gender":"Male","State":"SA","Value":70.4,"Lat":-34.9285,"Lon":138.6007},
+          {"Age":"25-34","Gender":"Male","State":"WA","Value":149.1,"Lat":-31.9505,"Lon":115.8605},
+          {"Age":"25-34","Gender":"Male","State":"Tas","Value":23.2,"Lat":-42.8821,"Lon":147.3272},
+          {"Age":"25-34","Gender":"Male","State":"NT","Value":11.7,"Lat":-12.4634,"Lon":130.8456},
+          {"Age":"25-34","Gender":"Male","State":"ACT","Value":26.5,"Lat":-35.2809,"Lon":149.13}
+        ]
+      },
+      "mark": {"type": "circle", "stroke": "white", "opacity": 0.7},
+      "encoding": {
+        "longitude": {"field": "Lon", "type": "quantitative"},
+        "latitude": {"field": "Lat", "type": "quantitative"},
+        "size": {"field": "Value", "type": "quantitative", "title": "Value", "scale": {"range":[100,2000]}},
+        "color": {"field": "Age","type":"nominal","title":"Age Group"},
+        "tooltip": [
+          {"field":"State","type":"nominal"},
+          {"field":"Age","type":"nominal"},
+          {"field":"Value","type":"quantitative"}
+        ]
+      }
+    }
+  ]
+}
