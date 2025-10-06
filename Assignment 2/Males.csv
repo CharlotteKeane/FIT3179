@@ -1,0 +1,57 @@
+Age,Gender,State,Value,Lat,Lon,,Age group,Met (%),Did not meet (%),,Sports,Males_ParticipationRate,Females_ParticipationRate,Persons_ParticipationRate,Persons_Estimate
+15-17,Male,NSW,103.6,-33.8688,151.2093,,15 to 17,11.1,88.9,,Aerobics,0.1,0.9,0.5,99.6
+15-17,Male,Vic,74.5,-37.8136,144.9631,,18 to 24,36.9,63.1,,Aqua aerobics,0.1,0.8,0.5,90.8
+15-17,Male,Qld,54.2,-27.4698,153.0251,,25 to 34,30.7,69.3,,"Athletics, track and field",0.7,0.5,0.6,103.4
+15-17,Male,SA,17.9,-34.9285,138.6007,,35 to 44,24.1,75.9,,Australian Rules football,2.3,0.1,1.2,224
+15-17,Male,WA,43.3,-31.9505,115.8605,,45 to 54,19.4,80.6,,Badminton,0.7,0.5,0.5,97.8
+15-17,Male,Tas,7.6,-42.8821,147.3272,,55 to 64,15.6,84.4,,Basketball (indoor & outdoor),3.1,1.3,2.2,406.1
+15-17,Male,NT,3.1,-12.4634,130.8456,,65+,12.1,87.9,,Boxing,0.7,0.4,0.5,99.8
+15-17,Male,ACT,3.4,-35.2809,149.13,,,,,,Bush walking,1.4,1.7,1.5,285.6
+18-24,Male,NSW,270.3,-33.8688,151.2093,,,,,,Canoeing / Kayaking / Dragon boat racing,0.8,0.5,0.7,129.7
+18-24,Male,Vic,202.3,-37.8136,144.9631,,,,,,Cross country running,0.3,0.4,0.4,70.6
+18-24,Male,Qld,127.2,-27.4698,153.0251,,,,,,Cycling / BMXing,8.5,4,6.2,1151.9
+18-24,Male,SA,54.9,-34.9285,138.6007,,,,,,Dancing / Ballet,0.3,2.2,1.30,237.2
+18-24,Male,WA,80.9,-31.9505,115.8605,,,,,,Fishing,1.9,0.1,1,177.1
+18-24,Male,Tas,16.5,-42.8821,147.3272,,,,,,Fitness / Gym,15.9,18.9,17.4,3214
+18-24,Male,NT,7.2,-12.4634,130.8456,,,,,,"Football sports (excluding rugby, soccer, Australian Rules football)",1.80,1.30,1.60,297.7
+18-24,Male,ACT,15.2,-35.2809,149.13,,,,,,Golf,6.6,1.4,4,732
+25-34,Male,NSW,362,-33.8688,151.2093,,,,,,Gymnastics,0.2,0.2,0.2,38
+25-34,Male,Vic,267.9,-37.8136,144.9631,,,,,,Hockey (indoor and outdoor),0.7,0.6,0.7,121.4
+25-34,Male,Qld,191.6,-27.4698,153.0251,,,,,,Horse riding / Equestrian activities / Polo,0.2,1.2,0.8,142
+25-34,Male,SA,70.4,-34.9285,138.6007,,,,,,Ice / snow sports,0.6,0.5,0.5,99.5
+25-34,Male,WA,149.1,-31.9505,115.8605,,,,,,Indoor cricket,0.6,0,0.3,54.4
+25-34,Male,Tas,23.2,-42.8821,147.3272,,,,,,Indoor soccer,2,0.4,1.2,218.8
+25-34,Male,NT,11.7,-12.4634,130.8456,,,,,,Jogging / Running,8.1,6.7,7.4,1363.1
+25-34,Male,ACT,26.5,-35.2809,149.13,,,,,,Lawn bowls,1.4,0.6,1.00,181.3
+,Male ,NT,11.7,-12.4634,130.8456,,,,,,Lifesaving,0.1,0.2,0.2,28.1
+,Male ,ACT,26.5,-35.2809,149.13,,,,,,Martial arts,1.2,1.2,1.2,220.4
+,,,,,,,,,,,Motor sports,0.5,0,0.3,49.1
+,,,,,,,,,,,Netball (Indoor and outdoor),0.3,4.1,2.2,413.8
+,,,,,,,,,,,Outdoor cricket,2.3,0.1,1.2,219.7
+,,,,,,,,,,,Outdoor soccer,3.5,1.3,2.4,438.8
+,,,,,,,,,,,Pilates,0.1,2,1.1,197.8
+,,,,,,,,,,,Rock climbing / Abseiling / Caving,0.2,0.1,0.2,32.4
+,,,,,,,,,,,Rowing,0.4,0,0.2,44.8
+,,,,,,,,,,,Rugby league,0.9,0,0.5,88.1
+,,,,,,,,,,,Rugby union,1.1,0,0.5,96.3
+,,,,,,,,,,,Sailing,0.6,0.3,0.4,71.5
+,,,,,,,,,,,Scuba diving / Snorkelling,0.5,0.1,0.2,45.7
+,,,,,,,,,,,Shooting sports,0.5,0,0.3,56.6
+,,,,,,,,,,,Skateboarding / Inline hockey / Roller sports,0.3,0.2,0.3,54.9
+,,,,,,,,,,,Softball / Tee ball,0.2,0.2,0.2,40.7
+,,,,,,,,,,,Squash / Racquetball,0.9,0.2,0.6,104.5
+,,,,,,,,,,,Surf sports,1.7,0.4,1.1,196
+,,,,,,,,,,,Swimming / Diving,5,7.6,6.4,1174.8
+,,,,,,,,,,,Table tennis,0.3,0.1,0.20,41.3
+,,,,,,,,,,,Tennis (indoor and outdoor),3.4,2.7,3,563.1
+,,,,,,,,,,,Tenpin bowling,0.3,0.2,0.3,49
+,,,,,,,,,,,Trail bike riding,0.4,0,0.2,41.5
+,,,,,,,,,,,Triathlons,0.4,0.2,0.3,58.8
+,,,,,,,,,,,Volleyball (indoor and outdoor),0.5,0.6,0.5,91.9
+,,,,,,,,,,,Walking for exercise,13.6,24.7,19.2,3544.9
+,,,,,,,,,,,Water polo,0.10,0.10,0.10,24.9
+,,,,,,,,,,,Water volleyball / Rafting / Other water sports,0.2,0.1,0.1,27.5
+,,,,,,,,,,,Waterskiing / Powerboating,0.7,0.2,0.5,88.7
+,,,,,,,,,,,Weight lifting / Powerlifting / Body building,0.4,0.2,0.3,52.8
+,,,,,,,,,,,Yoga,0.4,3,1.7,317.5
+,,,,,,,,,,,Yoga,38.9,282.7,317.5,0.4

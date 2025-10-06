@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Three Vega-Lite Charts</title>
+
+    <!-- Import Vega & Vega-Lite -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <!-- Import pure.css for layout -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Optional external CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <h1>My Vega-Lite Visualisations</h1>
+        <p>This page displays my three charts using Vega-Lite and Vega-Embed.</p>
+
+        <hr class="hr3">
+
+        <h2>1. Grouped Bar Chart</h2>
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+                <div id="vis1" class="vis-container"></div>
+            </div>
+        </div>
+
+        <hr class="hr3">
+
+        <h2>2. Types of Activity</h2>
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+                <div id="vis2" class="vis-container"></div>
+            </div>
+        </div>
+
+        <hr class="hr3">
+
+        <h2>3. Map with Graticules</h2>
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+                <div id="vis3" class="vis-container"></div>
+            </div>
+        </div>
+
+        <hr class="hr3">
+
+        <div class="pure-g">
+            <div class="pure-u-1-1 small-font">
+                <p>&copy; 2025 Created by Charlotte Keane | Example for FIT3179.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        // Embed your three local Vega-Lite JSON specs
+        vegaEmbed('#vis1', 'grouped_bar.vg.json').catch(console.error);
+        vegaEmbed('#vis2', 'Types_of_activity.vg.json').catch(console.error);
+        vegaEmbed('#vis3', 'map_with_graticules.vg.json').catch(console.error);
+    </script>
+
+</body>
+</html>
