@@ -59,18 +59,11 @@
           "title": "Participation Rate",
           "scale": {"range": [100, 2500]}
         },
-        "color": {
-          "value": "#1f77b4",
-          "title": "Male"
-        },
+        "color": {"value": "#1f77b4"},
         "tooltip": [
           {"field": "State", "type": "nominal"},
           {"field": "Age", "type": "nominal"},
-          {
-            "field": "ParticipationRate",
-            "type": "quantitative",
-            "title": "Participation Rate"
-          }
+          {"field": "ParticipationRate", "type": "quantitative", "title": "Participation Rate"}
         ]
       }
     },
