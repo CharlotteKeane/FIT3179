@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart showing proportion of people meeting vs not meeting physical activity guidelines by age group, with lowered annotation on 18–24 group.",
+  "data": {
+    "url": "Males.csv"
+  },
+  "transform": [
+    {"fold": ["Met (%)", "Did not meet (%)"], "as": ["Status", "Value"]}
+  ],
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "Age group", "type": "ordinal", "title": "Age Group"},
+        "y": {"field": "Value", "type": "quantitative", "title": "Percentage"},
+        "color": {
+          "field": "Status",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Met (%)", "Did not meet (%)"],
+            "range": ["#1f77b4", "#ff7f0e"]
+          },
+          "title": "Physical Activity Status"
+        },
+        "tooltip": [
+          {"field": "Age group", "type": "ordinal"},
+          {"field": "Status", "type": "nominal"},
+          {"field": "Value", "type": "quantitative", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x": "18 to 24", "y": 40},
+          {"x": "25 to 34", "y": 55}
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "color": "black",
+        "strokeWidth": 1.5,
+        "point": {"filled": true, "fill": "black", "size": 40}
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "ordinal"},
+        "y": {"field": "y", "type": "quantitative"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x": "25 to 34", "y": 57, "label": "Highest activity in 18–24 age group"}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 6,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "ordinal"},
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    }
+  ]
+}
