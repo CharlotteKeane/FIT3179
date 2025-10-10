@@ -4,7 +4,7 @@
   "height": 600,
   "background": "#cce5ff",
   "title": {
-    "text": "Australia Participants by State, Age, and Sex",
+    "text": "Australia - Male Participants by State and Age",
     "fontSize": 24,
     "anchor": "start"
   },
@@ -27,15 +27,6 @@
         ],
         "name": "Select Age Group: "
       }
-    },
-    {
-      "name": "SexSelection",
-      "value": "All",
-      "bind": {
-        "input": "select",
-        "options": ["All", "Male", "Female"],
-        "name": "Select Sex: "
-      }
     }
   ],
   "layer": [
@@ -50,7 +41,7 @@
       "data": {"url": "Males.csv", "format": {"type": "csv"}},
       "transform": [
         {
-          "filter": "(AgeSelection == 'All' || trim(toString(datum.Age)) == trim(toString(AgeSelection))) && (SexSelection == 'All' || trim(toString(datum.Sex)) == trim(toString(SexSelection)))"
+          "filter": "(AgeSelection == 'All' || trim(toString(datum.Age)) == trim(toString(AgeSelection))) && datum.Sex == 'Male'"
         }
       ],
       "mark": {
@@ -69,18 +60,12 @@
           "scale": {"range": [100, 2500]}
         },
         "color": {
-          "field": "Sex",
-          "type": "nominal",
-          "title": "Sex",
-          "scale": {
-            "domain": ["Male", "Female"],
-            "range": ["#1f77b4", "#ff69b4"]
-          }
+          "value": "#1f77b4",
+          "title": "Male"
         },
         "tooltip": [
           {"field": "State", "type": "nominal"},
           {"field": "Age", "type": "nominal"},
-          {"field": "Sex", "type": "nominal"},
           {
             "field": "ParticipationRate",
             "type": "quantitative",
